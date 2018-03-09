@@ -1,4 +1,5 @@
 package SpringWebService;
+//there cannot be two controllers with the same requestmapping in the same class path
 
 //a controller is bascially java class that has certain annotations
 //annotations tell what is the url mapping it to and what should happen when the request comes to that url
@@ -6,6 +7,9 @@ package SpringWebService;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Arrays;
+import java.util.List;
 
 @RestController //this identifies that it is a rest controller
 //methods can be added to this class that can be mapped with particular requests
@@ -19,4 +23,6 @@ public class MessageController {
     {
         return "hi";
     }
+
+    
 }
