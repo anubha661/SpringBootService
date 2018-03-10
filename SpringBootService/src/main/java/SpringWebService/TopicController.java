@@ -30,10 +30,10 @@ public class TopicController {
     }*/
         /*@RequestMapping("/message/{foo}")
         public Message getMessage(@PathVariable(foo) String i)*/
-        @RequestMapping("/message/{i}")
-        public Message getMessage(@PathVariable String i)
+        @RequestMapping("/message/{i}/{k}")
+        public Message getMessage(@PathVariable String i,@PathVariable String k)
         {
-            return topicService.getMessage(i);
+            return topicService.getMessage(i,k);
         }
 
 }

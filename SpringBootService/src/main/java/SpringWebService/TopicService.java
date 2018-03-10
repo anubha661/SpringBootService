@@ -21,7 +21,7 @@ public class TopicService {
         return message;
     }
 
-    public  Message getMessage(String i) {
+    public  Message getMessage(String i,String k) {
         /*
         lambda expression
         given a message i want to compare the id of that message with the passed id
