@@ -1,20 +1,24 @@
 package SpringWebService;
 
+import java.util.Objects;
+
 public class Message {
 
     private String  Todaymesage;
-    private int MessageNumber;
+    private String MessageNumber;
 
-    public Message(String todaymesage,int messagenumber) {
+    public Message(String todaymesage, String messagenumber) {
         Todaymesage = todaymesage;
         MessageNumber=messagenumber;
     }
 
-    public int getMessageNumber() {
+    public String getMessageNumber() {
         return MessageNumber;
     }
 
-    public void setMessageNumber(int messageNumber) {
+
+
+    public void setMessageNumber(String messageNumber) {
         MessageNumber = messageNumber;
     }
 

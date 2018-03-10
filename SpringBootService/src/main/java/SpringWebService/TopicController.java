@@ -2,6 +2,7 @@ package SpringWebService;
 
 import SpringWebService.Message;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +14,7 @@ public class TopicController {
 
     @Autowired
     private TopicService topicService;
-    @RequestMapping("/messageaa")
+    /*@RequestMapping("/messageaa")
     public List<Message> getAllMessages() //whatever we return is automatically going to get convereted to JSON becuase of the annotation
     {
 
@@ -25,6 +26,14 @@ public class TopicController {
 
         );*/
 
-         return topicService.getAllMessage();
-    }
+        /* return topicService.getAllMessage();
+    }*/
+        /*@RequestMapping("/message/{foo}")
+        public Message getMessage(@PathVariable(foo) String i)*/
+        @RequestMapping("/message/{i}")
+        public Message getMessage(@PathVariable String i)
+        {
+            return topicService.getMessage(i);
+        }
+
 }
