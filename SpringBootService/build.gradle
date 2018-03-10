@@ -26,9 +26,11 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+    compile("org.mongodb:mongodb-driver:3.3.0")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile ("com.sun.jersey:jersey-server:1.13")
     compile ("com.sun.jersey:jersey-core:1.13")
     compile ("com.sun.jersey:jersey-servlet:1.13")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     testCompile("junit:junit")
 }

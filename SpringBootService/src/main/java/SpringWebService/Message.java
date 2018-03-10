@@ -1,10 +1,15 @@
 package SpringWebService;
 
-import java.util.Objects;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+//to show that it is a document for the collection
+@Document(collection = "MorningQuotes")
 public class Message {
 
     private String  Todaymesage;
+    @Id
     private String MessageNumber;
 
     public Message(String todaymesage, String messagenumber) {
@@ -17,16 +22,9 @@ public class Message {
     }
 
 
-
-    public void setMessageNumber(String messageNumber) {
-        MessageNumber = messageNumber;
-    }
-
     public String getTodaymesage() {
         return Todaymesage;
     }
 
-    public void setTodaymesage(String todaymesage) {
-        Todaymesage = todaymesage;
-    }
+
 }
