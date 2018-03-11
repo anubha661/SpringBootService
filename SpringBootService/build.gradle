@@ -26,12 +26,20 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile("org.mongodb:mongodb-driver:3.3.0.RELEASE")
+    /*//compile("org.mongodb:mongodb-driver:3.3.0.RELEASE")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile ("com.sun.jersey:jersey-server:1.13")
     compile ("com.sun.jersey:jersey-core:1.13")
     compile ("com.sun.jersey:jersey-servlet:1.13")
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     compile("org.springframework.data:spring-data-commons-core:1.4.1.RELEASE")
+    compile("org.springframework.data:spring-data-mongodb:1.0.0.RELEASE")
+
+    testCompile("junit:junit")*/
+
+    //compile("org.mongodb:mongodb-driver:3.3.0.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-web")
+
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     testCompile("junit:junit")
 }

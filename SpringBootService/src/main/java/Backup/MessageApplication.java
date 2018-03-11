@@ -10,7 +10,7 @@ package Backup;
 //this is servlet controller
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+
 
 @SpringBootApplication
 
@@ -27,5 +27,5 @@ public class MessageApplication {
 //needs is to handle request, given this request i want to execute a piece of code on servlet container
 //this can be accomplished by adding a controller to spring
 //a controller is bascially java class that has certain annotations
-//annotations tell what is the url mapping it to and what should happen when the request comes to that url
+//annotation     s tell what is the url mapping it to and what should happen when the request comes to that url
 //has info about: what url access triggers it,what method to run when accessed

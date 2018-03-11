@@ -27,6 +27,7 @@ public class DataBaseSeeder  implements CommandLineRunner {
         this.messageRepository.saveAll(message);
 
 
+
     }
 
 }
