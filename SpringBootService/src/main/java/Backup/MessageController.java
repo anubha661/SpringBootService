@@ -1,4 +1,4 @@
-package SpringWebService;
+package Backup;
 //there cannot be two controllers with the same requestmapping in the same class path
 
 //a controller is bascially java class that has certain annotations
@@ -9,21 +9,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
 import java.util.List;
 
 @RestController //this identifies that it is a rest controller
 //methods can be added to this class that can be mapped with particular requests
 public class MessageController {
     @Autowired
-  private MessageRepository messageRepository;
+  private MessageService messageService;
     //this method has to be accessed when the user hits http//localhost:8080/message
     //request mapping has to be done for this method
     //we want this method to be executed whenever request contains url /message
 
-    public MessageController(MessageRepository messageRepository) {
-        this.messageRepository = messageRepository;
-    }
+
 
     @RequestMapping("/message")
     public String sayHie()
@@ -34,7 +31,7 @@ public class MessageController {
     @RequestMapping("/allmessages")
      public List<Message> getAll()
     {
-     return this.messageRepository.findAll();
+     return this.messageService.getAll();
     }
 
 

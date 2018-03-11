@@ -1,4 +1,4 @@
-package SpringWebService;
+package Backup;
 
 
 //to tell spring that this is an spring application for that we will add annotation
@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication
-@EnableMongoRepositories(basePackageClasses = MessageRepository.class)
+
 public class MessageApplication {
 
     public static void main(String args[])
