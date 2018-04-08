@@ -1,4 +1,4 @@
-package Backup;
+package SpringBootService;
 
 
 import org.springframework.data.annotation.Id;
@@ -19,18 +19,23 @@ public class Message {
     }
 
     public String getMessageCode() {
+        System.out.println("getmessagecode");
         return messageCode;
     }
 
     public void setMessageCode(String messageCode) {
+        System.out.println("setmessagecode");
         this.messageCode = messageCode;
     }
 
     public String getTodaysMessage() {
-        return todaysMessage;
+
+        System.out.println("getmessage");return todaysMessage;
     }
 
     public void setTodaysMessage(String todaysMessage) {
+
+        System.out.println("setmessagecode");
         this.todaysMessage = todaysMessage;
     }
 

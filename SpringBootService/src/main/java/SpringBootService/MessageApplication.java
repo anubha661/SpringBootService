@@ -1,4 +1,4 @@
-package Backup;
+package SpringBootService;
 
 
 //to tell spring that this is an spring application for that we will add annotation
@@ -19,6 +19,7 @@ public class MessageApplication {
     public static void main(String args[])
     {
 
+        System.out.println("in message application");
         SpringApplication.run(MessageApplication.class, args);
     }
 

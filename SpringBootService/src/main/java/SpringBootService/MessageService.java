@@ -1,4 +1,4 @@
-package Backup;
+package SpringBootService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,6 +13,9 @@ public class MessageService {
     
     public List<Message> getAll()
     {
+
+
+        System.out.println("in message service");
         return this.messageRepository.findAll();
     }
 
