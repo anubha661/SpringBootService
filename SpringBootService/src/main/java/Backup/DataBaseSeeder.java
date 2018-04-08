@@ -19,9 +19,9 @@ public class DataBaseSeeder  implements CommandLineRunner {
     @Override
     public void run(String... strings)throws Exception
     {
-        Message m1=new Message("goodMorning","1");
-        Message m2=new Message("Coffee is the solution","2");
-        Message m3=new Message("Work on your dreams","3");
+        Message m1=new Message("1","goodMorning");
+        Message m2=new Message("2","Coffee is the solution");
+        Message m3=new Message("3","Work on your dreams");
         List<Message> message= Arrays.asList(m1,m2,m3);
 
         this.messageRepository.saveAll(message);

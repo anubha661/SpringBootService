@@ -7,25 +7,31 @@ import org.springframework.data.mongodb.core.mapping.Document;
 //to show that it is a document for the collection
 @Document(collection = "MorningQuotes")
 public class Message {
-    public Message() {
-    }
-
-    private String  Todaymesage;
     @Id
-    private String MessageNumber;
+    private  String messageCode;
+    private String todaysMessage;
 
-    public Message(String todaymesage, String messagenumber) {
-        Todaymesage = todaymesage;
-        MessageNumber=messagenumber;
+    public Message()
+    {}
+    public Message(String messageCode, String todaysMessage) {
+        this.messageCode = messageCode;
+        this.todaysMessage = todaysMessage;
     }
 
-    public String getMessageNumber() {
-        return MessageNumber;
+    public String getMessageCode() {
+        return messageCode;
     }
 
+    public void setMessageCode(String messageCode) {
+        this.messageCode = messageCode;
+    }
 
-    public String getTodaymesage() {
-        return Todaymesage;
+    public String getTodaysMessage() {
+        return todaysMessage;
+    }
+
+    public void setTodaysMessage(String todaysMessage) {
+        this.todaysMessage = todaysMessage;
     }
 
 

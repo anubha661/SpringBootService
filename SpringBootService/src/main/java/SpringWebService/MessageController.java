@@ -31,7 +31,7 @@ public class MessageController {
         return "hi";
     }
 
-    @RequestMapping("/allmessages")
+    @RequestMapping("/allmessagesa")
      public List<Message> getAll()
     {
      return this.messageRepository.findAll();
